@@ -1,0 +1,249 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    font-family: sans-serif;
+}
+/********start navbar***********/
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.511);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50px;
+    
+    
+}
+.navbar .row{
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.navbar .row a{
+    
+    color: gray;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.navbar .nav3:hover{
+    color: black;
+}/*********end navbar*********/
+/*****************start background image*******************/
+.BG_img{
+    background-image: url(../../images/images\ \(12\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+
+}
+.BG_img .txt1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.BG_img .txt1 h1{
+    width: 35%;
+    font-size: 40px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 15%;
+    text-align: center;
+}
+/*****************end background image*******************/
+/**************start cards*****************************************/
+.Cards_container{
+    
+    width: 75%;
+    margin-top: 30px!important;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+
+.Cards_container .card_1 , .card_2 ,.card_3{
+    border: .5px solid rgba(128, 128, 128, 0.591);
+    flex: 0 0 34%;
+    max-width: 32%;
+    text-align: center;
+    height: 470px;
+    
+}
+.Cards_container .Card_details{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(161, 215, 223, 0.295);
+    color: rgba(88, 84, 84, 0.902);
+}
+.Cards_container .Card_details .dels
+{
+    border-bottom: 1.5px solid rgba(0, 17, 255, 0.685);
+    margin: 7px;
+    padding: 7px;
+    margin-bottom: 1.5px;
+
+}
+.Cards_container button{
+    width: 35%;
+    border-radius: 2.5rem ;
+    border: .5px solid rgba(128, 128, 128, 0.591);
+    height: 40px;
+    margin: auto;
+    margin-top: 16px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 1s;
+}
+.Cards_container button:hover{
+    background-color: rgb(136, 65, 26);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+/**************end cards*****************************************/
+/*******************start about texts**********/
+.txts_container{
+    width: 75%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.txts_container .txt1 , .txt2  , .txt3 , .txt4{
+    flex: 0 0 43%;
+    max-width: 43%;
+    flex-direction: column;
+    text-align: justify;
+
+}
+.txts_container  h3{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.txts_container p , h3{
+    padding: 10px;
+    opacity: .7;
+}
+.txts_container p {
+    color: rgb(53, 51, 51);
+}
+/*******************end about texts**********************/
+/************************start footer***************/
+.footer{
+    background-color: black;
+    color: rgb(95, 90, 90);
+    text-align: center;
+    font-size: 15px;
+    height: 50px;
+}
+.footer p
+{
+    padding-top: 20px;
+}
+.footer a
+{
+    color: white;
+}
+.footer a:hover{
+    color: rgb(82, 166, 179);;
+}
+/************************end footer***************/
+
+
+/* ============== Responsive   ============  */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+.navbar .row{
+width: 100%;
+
+}
+.navbar a{
+flex: 0 0 10%;
+max-width: 10%;
+
+
+}
+.BG_img .txt1 h1{
+width: 100%;
+margin-top: 150px;
+}
+.Cards_container {
+flex-direction: column;
+}
+.Cards_container .card_1 , .card_2 ,.card_3{
+max-width: 100%;
+padding-bottom: 15px;
+margin-bottom: 10px;
+}
+.txts_container
+{
+flex-direction: column;
+text-align: justify;
+}
+.txts_container .txt1 , .txt2  , .txt3 , .txt4{
+max-width: 100%;
+}
+.footer{
+height: 70px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px){
+.navbar .row{
+width: 60%;
+
+}
+.BG_img .txt1 h1{
+width: 80%;
+margin-top: 155px;
+}
+.Cards_container {
+width: 93%;
+}
+.Cards_container .card_1 , .card_2 ,.card_3{
+height: 485px;
+}
+.txts_container {
+width: 93%;
+text-align: justify;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar .row{
+        width: 50%;
+        
+        }
+        .Cards_container{
+    
+            width: 75%;
+        }
+        .txts_container{
+    
+            width: 75%;
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
